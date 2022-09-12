@@ -1,5 +1,5 @@
 storage: ./storage
-listen: 0.0.0.0:8080
+listen: 0.0.0.0:8000
 web:
   title: npm.invo.zone
   logo: ./imgs/logo.png
