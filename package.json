@@ -1,0 +1,32 @@
+{
+  "name": "npm.invozone.com",
+  "version": "1.0.0",
+  "description": "private npm repositry for invozone",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InvoZone/invoswift-packages.git"
+  },
+  "keywords": [
+    "private",
+    "registry",
+    "npm",
+    "invozone",
+    "packages"
+  ],
+  "author": "Sheraz Ahmed",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/InvoZone/invoswift-packages/issues"
+  },
+  "homepage": "https://github.com/InvoZone/invoswift-packages#readme",
+  "dependencies": {
+    "verdaccio": "^5.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

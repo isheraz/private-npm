@@ -1,0 +1,6 @@
+/node_modules
+/storage
+htpasswd
+debug.logs
+default.conf.yaml
+.DS_Store

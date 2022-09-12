@@ -1,0 +1,36 @@
+storage: ./storage
+listen: 0.0.0.0:8080
+web:
+  title: npm.invo.zone
+  logo: ./imgs/logo.png
+  primary_color: "#2176ff"
+  favicon: ./imgs/favicon.png
+  login: true
+  showSettings: true
+  showInfo: false
+  showSearch: true
+  showFooter: false
+  scope: $authenticated
+auth:
+  htpasswd:
+    file: ./htpasswd
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@*/*':
+    access: $all
+    publish: $authenticated
+  'invozone-*':
+   access: $all
+   publish: admin
+   # you can override storage directory for a group of packages this way:
+   storage: 'local_storage'
+
+  '**':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+logs: 
+  - { type: stdout, format: pretty, level: http }
+  - { type: file, path: ./debug.logs, level: debug }
