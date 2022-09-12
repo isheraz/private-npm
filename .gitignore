@@ -2,5 +2,6 @@
 /storage
 htpasswd
 debug.logs
+npm.invo.log
 default.conf.yaml
 .DS_Store

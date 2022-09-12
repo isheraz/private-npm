@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/InvoZone/invoswift-packages#readme",
   "dependencies": {
-    "verdaccio": "^5.15.3"
+    "verdaccio": "^5.0.0-alpha.7"
   }
 }

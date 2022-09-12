@@ -10,7 +10,6 @@ web:
   showInfo: false
   showSearch: true
   showFooter: false
-  scope: $authenticated
 auth:
   htpasswd:
     file: ./htpasswd
@@ -23,5 +22,4 @@ packages:
     publish: $authenticated
     proxy: npmjs
 logs: 
-  - { type: stdout, format: pretty, level: http }
-  - { type: file, path: ./debug.logs, level: debug }
+  { type: file, path: npm.invo.log, level: debug, format: pretty-timestamped, colors: true }
