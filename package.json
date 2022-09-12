@@ -4,7 +4,8 @@
   "description": "private npm repositry for invozone",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "start": "verdaccio -c ./config.yaml",
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,5 @@
   "homepage": "https://github.com/InvoZone/invoswift-packages#readme",
   "dependencies": {
     "verdaccio": "^5.15.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.19"
   }
 }
